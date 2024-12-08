@@ -1,32 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body class="font-poppins">
     <header class="max-w-5xl mx-auto sticky top-0">
-      <div class="flex items-center justify-between">
-        <div>
-          <h1>TINFC 01 2023</h1>
-        </div>
+      <div class="flex items-center justify-between my-4 py-4">
+        <figure class="w-32">
+          <img
+            src="/public/assets/images/elearning.png"
+            alt="Eleearning"
+            class="w-full h-full"
+          />
+        </figure>
         <nav>
-          <ul>
+          <ul class="flex items-center gap-2 text-base color-dev-BrightSkyBlue">
             <li><a href="#heroBanner">Home</a></li>
+            <li><a href="#heroBanner">About</a></li>
+            <li><a href="#heroBanner">Testimonials</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section id="heroBanner">
-        <div class="container mx-auto max-w-5xl bg-blue-500">
-          <h2>hello world</h2>
+      <!-- Hero Banner Start -->
+      <section id="heroBanner" class="py-10">
+        <div class="container mx-auto max-w-5xl">
+          <div class="flex items-center justify-between">
+            <div class="max-w-[460px]">
+              <h2 class="text-5xl font-semibold mb-3 leading-tight">
+                Master New
+                <span
+                  class="bg-gradient-to-b from-[#2991FB] to-[#392DB0] bg-clip-text text-transparent"
+                  >Skills</span
+                >
+                <span
+                  class="bg-gradient-to-b from-[#2991FB] to-[#392DB0] bg-clip-text text-transparent"
+                  >At Your</span
+                >
+                Own Pace.
+              </h2>
+              <p class="color-dev-black text-sm mb-7">
+                Join a vibrant community of learners who, like you, are
+                passionate about continuous growth and knowledge.
+              </p>
+              <button
+                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-sm"
+              >
+                Get Started
+              </button>
+            </div>
+            <div>
+              <figure class="w-[400px]">
+                <img
+                  src="/public/assets/images/banner.png"
+                  alt="Banner"
+                  class="w-full h-full"
+                />
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- Hero Banner End -->
+
+
       <section>
-        <div class="container mx-auto"></div>
+        <div class="container mx-auto max-w-5xl">
+          <div class="grid grid-cols-4 place-content-center">
+            <figure>
+              <img
+                src="/public/assets/images/skillshare.png"
+                alt="Skillshare"
+              />
+            </figure>
+            <figure>
+              <img src="/public/assets/images/udacity.png" alt="Udacity" />
+            </figure>
+            <figure>
+              <img src="/public/assets/images/coursera.png" alt="Coursera" />
+            </figure>
+            <figure>
+              <img src="/public/assets/images/udemy.png" alt="Udemy" class="w-full bg-blue-500" />
+            </figure>
+          </div>
+        </div>
       </section>
     </main>
     <script src="./src/assets/js/script.js"></script>
