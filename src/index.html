@@ -11,34 +11,81 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="font-poppins">
-    <header class="max-w-5xl mx-auto sticky top-0">
-      <div class="flex items-center justify-between my-4 py-4">
-        <figure class="w-32">
-          <img
-            src="/public/assets/images/elearning.png"
-            alt="Eleearning"
-            class="w-full h-full"
-          />
-        </figure>
-        <nav>
-          <ul class="flex items-center gap-2 text-base color-dev-BrightSkyBlue">
-            <li><a href="#heroBanner">Home</a></li>
-            <li><a href="#heroBanner">About</a></li>
-            <li><a href="#heroBanner">Testimonials</a></li>
+    <header class="bg-white px-2 lg:px-0 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto py-4">
+        <div class="flex items-center justify-between">
+          <figure class="w-32">
+            <img
+              src="/public/assets/images/elearning.png"
+              alt="Eleearning"
+              class="w-full h-full"
+            />
+          </figure>
+          <nav id="nav-desktop" class="hidden md:block">
+            <ul
+              class="flex items-center gap-2 text-base color-dev-BrightSkyBlue"
+            >
+              <li><a href="#heroBanner">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#heroBanner">Testimonials</a></li>
+            </ul>
+          </nav>
+
+          <button
+            id="btn-hamburger"
+            onclick="handleHamburgerMenu()"
+            class="md:hidden flex flex-col gap-1"
+          >
+            <span class="block w-5 h-[2px] bg-[#2991FB]"> </span
+            ><span class="block w-5 h-[2px] bg-[#2991FB]"> </span
+            ><span class="block w-5 h-[2px] bg-[#2991FB]"> </span>
+          </button>
+        </div>
+
+        <nav id="nav-mobile" class="hidden md:hidden w-full">
+          <ul class="flex w-full flex-col gap-5 text-base py-4">
+            <li>
+              <a
+                href="#heroBanner"
+                class="text-[#2991FB]/50 hover:text-[#2991FB]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heroBanner"
+                class="text-[#2991FB]/50 hover:text-[#2991FB]"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heroBanner"
+                class="text-[#2991FB]/50 hover:text-[#2991FB]"
+                >Testimonials</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <!-- Hero Banner Start -->
-      <section id="heroBanner" class="py-10">
-        <div class="container mx-auto max-w-5xl">
-          <div class="flex items-center justify-between">
-            <div class="max-w-[460px]">
-              <h2 class="text-5xl font-semibold mb-3 leading-tight">
+      <section id="heroBanner" class="py-4 md:py-10">
+        <div class="container mx-auto max-w-5xl px-2 lg:px-0 overflow-hidden">
+          <div
+            class="flex flex-col md:flex-row items-center gap-8 justify-between"
+          >
+            <div
+              class="max-w-[460px]"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
+              <h2 class="md:text-5xl text-3xl font-semibold mb-3 leading-tight">
                 Master New
                 <span
                   class="bg-gradient-to-b from-[#2991FB] to-[#392DB0] bg-clip-text text-transparent"
@@ -50,18 +97,18 @@
                 >
                 Own Pace.
               </h2>
-              <p class="color-dev-black text-sm mb-7">
+              <p class="color-dev-black text-xs md:text-sm mb-7">
                 Join a vibrant community of learners who, like you, are
                 passionate about continuous growth and knowledge.
               </p>
               <button
-                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-sm"
+                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-xs md:text-sm"
               >
                 Get Started
               </button>
             </div>
-            <div>
-              <figure class="w-[400px]">
+            <div data-aos="fade-up" data-aos-duration="900">
+              <figure class="md:w-[400px]">
                 <img
                   src="/public/assets/images/banner.png"
                   alt="Banner"
@@ -74,29 +121,94 @@
       </section>
       <!-- Hero Banner End -->
 
-
-      <section>
-        <div class="container mx-auto max-w-5xl">
-          <div class="grid grid-cols-4 place-content-center">
-            <figure>
+      <!-- Partner Start -->
+      <section class="py-10">
+        <div class="container mx-auto max-w-5xl px-2 lg:px-0">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 w-full justify-items-center place-items-center"
+          >
+            <figure data-aos="fade-up" data-aos-duration="900">
               <img
                 src="/public/assets/images/skillshare.png"
                 alt="Skillshare"
               />
             </figure>
-            <figure>
+            <figure data-aos="fade-up" data-aos-duration="1200">
               <img src="/public/assets/images/udacity.png" alt="Udacity" />
             </figure>
-            <figure>
+            <figure data-aos="fade-up" data-aos-duration="1500">
               <img src="/public/assets/images/coursera.png" alt="Coursera" />
             </figure>
-            <figure>
-              <img src="/public/assets/images/udemy.png" alt="Udemy" class="w-full bg-blue-500" />
+            <figure data-aos="fade-up" data-aos-duration="1800">
+              <img src="/public/assets/images/udemy.png" alt="Udemy" />
             </figure>
           </div>
         </div>
       </section>
+      <!-- Partner End -->
+
+      <!-- About Start -->
+      <section id="about">
+        <div class="container px-2 mx-auto lg:px-0 overflow-hidden">
+          <div
+            class="flex flex-col items-center md:flex-row md:gap-10 lg:gap-20"
+          >
+            <div>
+              <figure
+                class="w-[380px] lg:w-[520px]"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <img
+                  src="/public/assets/images/about-person.png"
+                  alt="About person"
+                />
+              </figure>
+            </div>
+            <div class="flex flex-col gap-7">
+              <h2
+                class="text-2xl md:text-3xl font-semibold"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                Our most reviewed <br />
+                Course is
+                <span
+                  class="bg-gradient-to-b from-[#2991FB] to-[#392DB0] bg-clip-text text-transparent"
+                  >Digital Marketing.</span
+                >
+              </h2>
+              <p
+                class="text-black text-sm max-w-[460px]"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                Embrace the future of education with E- Learning platform.Ignite
+                your curiosity, fuel your aspirations, and unlock a world of
+                possibilities. Enroll today and embark on a learning experience
+                that transcends boundaries, making education accessible,
+                enjoyable, and tailored to your unique journey. Welcome to a
+                brighter, more knowledgeable tomorrow.
+              </p>
+              <button
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-xs md:text-sm"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About End -->
     </main>
-    <script src="./src/assets/js/script.js"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="/src/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
