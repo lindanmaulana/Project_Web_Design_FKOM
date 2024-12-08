@@ -73,7 +73,7 @@
         </nav>
       </div>
     </header>
-    
+
     <main>
       <!-- Hero Banner Start -->
       <section id="heroBanner" class="py-4 md:py-10">
@@ -205,23 +205,23 @@
       <!-- About End -->
 
       <!-- Our Testimonials Start -->
-      <section id="testimonials">
-        <div class="container mx-auto px-2 lg:px-0 overflow-hidden">
-          <div class="relative h-screen flex justify-center items-center">
+      <section id="testimonials" class="relative py-10">
+        <div class="container max-w-5xl mx-auto px-2 lg:px-0 overflow-hidden">
+          <div class="h-screen flex justify-center items-center">
             <div
-              class="h-[15%] md:h-[25%] md:w-[15%] w-[25%] absolute left-0 bottom-0"
+              class="h-[15%] md:h-[25%] md:w-[15%] w-[25%] absolute left-0 bottom-10"
             >
               <img
-                src="./../public/assets/images/QuoteLeft.png"
+                src="/public/assets/images/QuoteLeft.png"
                 alt=""
                 class="w-full h-full"
               />
             </div>
             <div
-              class="h-[15%] md:h-[25%] md:w-[15%] w-[25%] absolute right-0 top-0"
+              class="h-[15%] md:h-[25%] md:w-[15%] w-[25%] absolute right-0 top-10"
             >
               <img
-                src="./../public/assets/images/QuoteRight.png"
+                src="/public/assets/images/QuoteRight.png"
                 alt=""
                 class="w-full h-full"
               />
@@ -230,9 +230,11 @@
               class="w-full h-full flex absolute justify-center items-center"
             >
               <div
-                class="h-4/6 scrollHidden lg:h-full overflow-auto flex flex-wrap justify-center items-center gap-20  text-sm text-center text-slate-500 py-5"
+                class="h-4/6 scrollHidden lg:h-full overflow-auto flex flex-wrap justify-center items-center gap-10 text-sm text-center text-slate-500 py-5"
               >
-                <div class="w-[300px] h-[400px] bg-white b cards p-5 flex flex-col justify-between items-center">
+                <div
+                  class="w-[300px] h-[400px] bg-white b cards p-5 flex flex-col justify-between items-center"
+                >
                   <p>
                     "Enrolling in the Digital Accelerator program was the best
                     decision for my business. The course tailored its content to
@@ -245,14 +247,16 @@
                     landscape."
                   </p>
                   <div class="p-2 flex text-start">
-                    <img src="./../public/assets/foto/people1.png" class="w-1/6">
+                    <img src="/public/assets/foto/people1.png" class="w-1/6" />
                     <div class="mx-5">
                       <h4 class="text-black text-md">Samantha L</h4>
                       <p class="text-sm">Marketing Profesional</p>
                     </div>
                   </div>
                 </div>
-                <div class="w-[300px] h-[400px] bg-white b cards p-5  flex flex-col justify-between items-center">
+                <div
+                  class="w-[300px] h-[400px] bg-white b cards p-5 flex flex-col justify-between items-center"
+                >
                   <p>
                     "Having worked in marketing for years, I thought I knew it
                     all. However, the Advanced Digital Strategies course
@@ -265,14 +269,16 @@
                     digital marketing sphere."
                   </p>
                   <div class="p-2 flex text-start">
-                    <img src="./../public/assets/foto/people2.png" class="w-1/6">
+                    <img src="/public/assets/foto/people2.png" class="w-1/6" />
                     <div class="mx-5">
                       <h4 class="text-black text-md">Samantha L</h4>
                       <p class="text-sm">Marketing Profesional</p>
                     </div>
                   </div>
                 </div>
-                <div class="w-[300px] h-[400px] bg-white cards p-5 flex flex-col justify-between items-center">
+                <div
+                  class="w-[300px] h-[400px] bg-white cards p-5 flex flex-col justify-between items-center"
+                >
                   <p>
                     "Enrolling in the Digital Accelerator program was the best
                     decision for my business. The course tailored its content to
@@ -285,7 +291,7 @@
                     landscape."
                   </p>
                   <div class="p-2 flex text-start">
-                    <img src="./../public/assets/foto/people3.png" class="w-1/6">
+                    <img src="/public/assets/foto/people3.png" class="w-1/6" />
                     <div class="mx-5">
                       <h4 class="text-black text-md">Samantha L</h4>
                       <p class="text-sm">Marketing Profesional</p>
@@ -298,6 +304,101 @@
         </div>
       </section>
       <!-- Our Testimonials End -->
+
+      <!-- Course Invitation Start -->
+      <section class="py-10">
+        <div class="container mx-auto max-w-5xl px-2 lg:px-0 overflow-hidden">
+          <div class="flex items-center justify-evenly">
+            <h3
+              class="text-xl md:text-2xl lg:text-5xl font-semibold leading-normal"
+              data-aos="fade-right"
+              data-aos-duration="1100"
+            >
+              Are You Ready
+              <span
+                class="bg-gradient-to-b from-[#2991FB] to-[#392DB0] bg-clip-text text-transparent"
+              >
+                To <br />
+                Enroll </span
+              >This Course?
+            </h3>
+            <a
+              href="#heroBanner"
+              class="bg-gradient-to-b max-w-56 text-xs lg:text-xl from-[#2991FB] to-[#392DB0] rounded-full text-white px-2 md:px-6 py-2"
+              data-aos="fade-left"
+              data-aos-duration="1100"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Course Invitation End -->
+
+      <!-- Contact Start -->
+      <section class="py-10">
+        <div class="container max-w-5xl px-2 lg:px-0 mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-10">
+            <div class="flex flex-col gap-5">
+              <a href="#heroBanner">
+                <figure>
+                  <img
+                    src="/public/assets/images/elearning.png"
+                    alt="Elearning"
+                  />
+                </figure>
+              </a>
+              <p class="text-sm text-[#282828] md:max-w-[76%]">
+                At E-Learning, learning is not just a task; it's a dynamic and
+                engaging adventure. Our user-friendly interface ensures seamless
+                navigation, while our experienced instructors and thoughtfully
+                crafted content guarantee a rewarding educational journey.
+              </p>
+            </div>
+            <div class="w-full flex flex-col gap-6">
+              <label for="" class="w-full rounded block">
+                <input
+                  type="text"
+                  placeholder="Write Your Email Name Here..."
+                  class="w-full p-3 rounded shadow-[0px_0px_4px_0.5px_black]"
+                />
+              </label>
+              <button
+                class="w-full bg-gradient-to-b font-semibold text-base from-[#2991FB] to-[#392DB0] rounded text-white px-6 py-2"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+          <div class="mt-10 flex items-center justify-between flex-wrap gap-4">
+            <div class="flex items-center gap-3">
+              <figure class="h-4">
+                <img src="/public/assets/icons/email.svg" alt="Email" class="w-full h-full">
+              </figure>
+              <h4 class="text-sm">CodeSans@gmail.com</h4>
+            </div>
+            <div class="flex items-center gap-3">
+              <figure class="h-4">
+                <img src="/public/assets/icons/world.svg" alt="World" class="w-full h-full">
+              </figure>
+              <h4 class="text-sm">www.codesans.com</h4>
+            </div>
+            <div class="flex items-center gap-3">
+              <figure class="h-4">
+                <img src="/public/assets/icons/phone.svg" alt="Phone" class="w-full h-full">
+              </figure>
+              <h4 class="text-sm">+62 877 9876 8654</h4>
+            </div>
+            <div class="flex items-center gap-3">
+              <figure class="h-4">
+                <img src="/public/assets/icons/linkedin.svg" alt="Linkedin" class="w-full h-full">
+              </figure>
+              <h4 class="text-sm">CodeSans.linkedin</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact End -->
     </main>
 
     <!-- Javascript -->
