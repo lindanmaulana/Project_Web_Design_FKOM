@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="font-poppins">
+    <!-- Header Start -->
     <header class="bg-white px-2 lg:px-0 sticky top-0 z-50">
       <div class="max-w-5xl mx-auto py-4">
         <div class="flex items-center justify-between">
@@ -34,6 +35,14 @@
               <li><a href="#testimonials">Testimonials</a></li>
             </ul>
           </nav>
+          <div class="text-sm hidden lg:block">
+            <button class="rounded-full px-2 py-1 text-[#2991FB]">Login</button
+            ><button
+              class="bg-gradient-to-b text-white from-[#2991FB] to-[#392DB0] rounded-full px-2 py-1"
+            >
+              Register
+            </button>
+          </div>
 
           <button
             id="btn-hamburger"
@@ -69,20 +78,35 @@
                 >Testimonials</a
               >
             </li>
+            <li>
+              <a
+                href="#heroBanner"
+                class="text-[#2991FB]/50 hover:text-[#2991FB]"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heroBanner"
+                class="text-[#2991FB]/50 hover:text-[#2991FB]"
+                >Register</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- Header End -->
 
     <main>
       <!-- Hero Banner Start -->
       <section id="heroBanner" class="py-4 md:py-10">
         <div class="container mx-auto max-w-5xl px-2 lg:px-0 overflow-hidden">
           <div
-            class="flex flex-col md:flex-row items-center gap-8 justify-between"
+            class="flex flex-col-reverse md:flex-row items-center gap-8 justify-between"
           >
             <div
-              class="max-w-[460px]"
+              class="w-full lg:max-w-[460px] flex flex-col justify-center md:justify-start md:items-start text-center md:text-left items-center"
               data-aos="fade-right"
               data-aos-duration="900"
             >
@@ -103,7 +127,7 @@
                 passionate about continuous growth and knowledge.
               </p>
               <button
-                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-xs md:text-sm"
+                class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-sm"
               >
                 Get Started
               </button>
@@ -233,6 +257,8 @@
                 class="h-4/6 scrollHidden lg:h-full overflow-auto flex flex-wrap justify-center items-center gap-10 text-sm text-center text-slate-500 py-5"
               >
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
                   class="w-[300px] h-[400px] bg-white b cards p-5 flex flex-col justify-between items-center"
                 >
                   <p>
@@ -255,6 +281,8 @@
                   </div>
                 </div>
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
                   class="w-[300px] h-[400px] bg-white b cards p-5 flex flex-col justify-between items-center"
                 >
                   <p>
@@ -277,6 +305,8 @@
                   </div>
                 </div>
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="1900"
                   class="w-[300px] h-[400px] bg-white cards p-5 flex flex-col justify-between items-center"
                 >
                   <p>
@@ -337,10 +367,14 @@
 
       <!-- Contact Start -->
       <section class="py-10">
-        <div class="container max-w-5xl px-2 lg:px-0 mx-auto">
+        <div class="container max-w-5xl px-2 lg:px-0 mx-auto overflow-hidden">
           <div class="flex flex-col md:flex-row items-center gap-10">
             <div class="flex flex-col gap-5">
-              <a href="#heroBanner">
+              <a
+                href="#heroBanner"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <figure>
                   <img
                     src="/public/assets/images/elearning.png"
@@ -348,23 +382,34 @@
                   />
                 </figure>
               </a>
-              <p class="text-sm text-[#282828] md:max-w-[76%]">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="1400"
+                class="text-sm text-[#282828] md:max-w-[76%]"
+              >
                 At E-Learning, learning is not just a task; it's a dynamic and
                 engaging adventure. Our user-friendly interface ensures seamless
                 navigation, while our experienced instructors and thoughtfully
                 crafted content guarantee a rewarding educational journey.
               </p>
             </div>
-            <div class="w-full flex flex-col gap-6">
-              <label for="" class="w-full rounded block">
+            <div class="w-full flex flex-col gap-6 lg:mr-1">
+              <label
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                for=""
+                class="w-full rounded"
+              >
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Write Your Email Name Here..."
-                  class="w-full p-3 rounded shadow-[0px_0px_4px_0.5px_black]"
+                  class="w-full p-3 rounded shadow-[0px_0px_4px_0.5px_black] placeholder:text-xs"
                 />
               </label>
               <button
-                class="w-full bg-gradient-to-b font-semibold text-base from-[#2991FB] to-[#392DB0] rounded text-white px-6 py-2"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                class="w-full bg-gradient-to-b font-semibold text-xs md:text-base from-[#2991FB] to-[#392DB0] rounded text-white px-6 py-2"
               >
                 SUBSCRIBE
               </button>
@@ -373,25 +418,41 @@
           <div class="mt-10 flex items-center justify-between flex-wrap gap-4">
             <div class="flex items-center gap-3">
               <figure class="h-4">
-                <img src="/public/assets/icons/email.svg" alt="Email" class="w-full h-full">
+                <img
+                  src="/public/assets/icons/email.svg"
+                  alt="Email"
+                  class="w-full h-full"
+                />
               </figure>
               <h4 class="text-sm">CodeSans@gmail.com</h4>
             </div>
             <div class="flex items-center gap-3">
               <figure class="h-4">
-                <img src="/public/assets/icons/world.svg" alt="World" class="w-full h-full">
+                <img
+                  src="/public/assets/icons/world.svg"
+                  alt="World"
+                  class="w-full h-full"
+                />
               </figure>
               <h4 class="text-sm">www.codesans.com</h4>
             </div>
             <div class="flex items-center gap-3">
               <figure class="h-4">
-                <img src="/public/assets/icons/phone.svg" alt="Phone" class="w-full h-full">
+                <img
+                  src="/public/assets/icons/phone.svg"
+                  alt="Phone"
+                  class="w-full h-full"
+                />
               </figure>
               <h4 class="text-sm">+62 877 9876 8654</h4>
             </div>
             <div class="flex items-center gap-3">
               <figure class="h-4">
-                <img src="/public/assets/icons/linkedin.svg" alt="Linkedin" class="w-full h-full">
+                <img
+                  src="/public/assets/icons/linkedin.svg"
+                  alt="Linkedin"
+                  class="w-full h-full"
+                />
               </figure>
               <h4 class="text-sm">CodeSans.linkedin</h4>
             </div>
@@ -400,6 +461,16 @@
       </section>
       <!-- Contact End -->
     </main>
+
+    <!-- Footer Start -->
+    <footer class="py-4 bg-black">
+      <div class="container max-w-5xl mx-auto">
+        <p class="text-center text-xs text-white">
+          Copyright &copy; 2024 CodeSans Learning. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- Javascript -->
     <script type="text/javascript" src="/src/assets/js/script.js"></script>
