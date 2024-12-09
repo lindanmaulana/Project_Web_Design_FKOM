@@ -22,3 +22,10 @@
 .scrollHidden {
     scrollbar-width: none;
 }
+
+.noHover {
+    opacity: 0.5;
+}
+.withHover {
+    opacity: 1.0;
+}
