@@ -95,6 +95,15 @@
           </ul>
         </nav>
       </div>
+      <a href="#" class="fixed bottom-5 right-5 opacity-50 hover:opacity-100">
+        <figure class="w-10">
+          <img
+            src="/public/assets/icons/backToTop.svg"
+            alt="Back to top"
+            class="w-full h-full"
+          />
+        </figure>
+      </a>
     </header>
     <!-- Header End -->
 
@@ -126,11 +135,12 @@
                 Join a vibrant community of learners who, like you, are
                 passionate about continuous growth and knowledge.
               </p>
-              <button
+              <a
+                href="#about"
                 class="bg-gradient-to-b max-w-32 from-[#2991FB] to-[#392DB0] rounded-full text-white px-4 py-2 text-sm"
               >
                 Get Started
-              </button>
+              </a>
             </div>
             <div data-aos="fade-up" data-aos-duration="900">
               <figure class="md:w-[400px] bg-white">
@@ -230,13 +240,13 @@
 
       <!-- Popular Courses Start -->
       <section class="py-10 bg-[url('/public/assets/images/course-bg.jpg')]">
-        <div class="container max-w-5xl mx-auto px-2 lg:px-0">
+        <div class="container max-w-5xl mx-auto px-2 lg:px-0 overflow-hidden ">
           <div class="text-center mb-16">
             <p class="font-semibold text-lg text-[#2991FB]">POPULAR COURSES</p>
             <h2 class="font-semibold text-3xl">Our Popular Courses</h2>
           </div>
           <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="1000">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden h-[50%]">
                   <img
@@ -334,7 +344,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="1200">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden">
                   <img
@@ -432,7 +442,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="1400">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden">
                   <img
@@ -530,7 +540,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="1600">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden">
                   <img
@@ -623,7 +633,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="1800">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden">
                   <img
@@ -721,7 +731,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in" data-aos-duration="2000">
               <div class="rounded overflow-hidden bg-white shadow-md h-[480px]">
                 <figure class="relative group overflow-hidden">
                   <img
@@ -833,6 +843,55 @@
         </div>
       </section>
       <!-- Popular Courses End -->
+
+      <!-- Free Course Start -->
+      <section
+        class="relative py-10 bg-gradient-to-b from-[#2991FB] to-[#392DB0]"
+      >
+        <figure class="absolute top-0 right-0 w-full hfull">
+          <img
+            src="/public/assets/images/free-courses.png"
+            alt="Free course"
+            class="w-full h-full"
+          />
+        </figure>
+        <div class="container max-w-5xl mx-auto px-2 lg:px-0 py-10">
+          <div class="grid md:grid-cols-2 place-items-center gap-4">
+            <div class="z-10">
+              <p class="font-semibold text-white text-sm md:text-lg mb-2">FREE COURSE</p>
+              <h3 class="text-2xl md:text-4xl mb-5 font-semibold text-white">
+                Join Our Free Courses
+              </h3>
+              <p class="text-white leading-normal mb-10">
+                Ready to level up your skills? Join our free courses today and
+                unlock a world of knowledge, completely free of charge.
+              </p>
+              <a
+                href="#"
+                class="max-w-[240px] justify-center text-sm font-medium gap-1 cursor-pointer flex items-center font-medium bg-white px-4 py-3 rounded text-[#392DB0]"
+              >
+                Upcomming Courses
+                <figure class="w-4">
+                  <img
+                    src="/public/assets/icons/arrowRightBlue.svg"
+                    alt="Upcomming Courses"
+                    class="w-full hfull"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div class="z-10">
+              <figure class="rounded overflow-hidden">
+                <img
+                  src="/public/assets/images/free-courses-banner.jpg"
+                  alt="Free courses"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Free Course End -->
 
       <!-- Our Testimonials Start -->
       <section id="testimonials" class="relative py-10">
@@ -1069,7 +1128,7 @@
     </main>
 
     <!-- Footer Start -->
-    <footer class="py-4 bg-black">
+    <footer class="py-4 bg-gradient-to-b from-[#2991FB] to-[#392DB0]">
       <div class="container max-w-5xl mx-auto">
         <p class="text-center text-xs text-white">
           Copyright &copy; 2024 CodeSans Learning. All rights reserved.
